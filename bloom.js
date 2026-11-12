@@ -71,3 +71,26 @@ if (themeToggleBtn) {
   }
 }
 
+// ============================================================================
+// MOBILE NAVIGATION MENU CONTROLLER
+// Handles hamburger menu open/close and auto-close on link navigation
+// ============================================================================
+const mobileNavToggle = document.getElementById("mobile-nav-toggle");
+const mainNav = document.getElementById("main-nav");
+
+if (mobileNavToggle && mainNav) {
+  mobileNavToggle.addEventListener("click", () => {
+    const isOpen = mainNav.classList.toggle("is-open");
+    mobileNavToggle.classList.toggle("is-active", isOpen);
+  });
+
+  // Automatically close menu when any navigation link is clicked
+  mainNav.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      mainNav.classList.remove("is-open");
+      mobileNavToggle.classList.remove("is-active");
+    });
+  });
+}
+
+
