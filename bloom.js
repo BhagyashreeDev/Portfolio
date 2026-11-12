@@ -22,8 +22,8 @@ function toggleBloom() {
     
     if (isBloomed) {
         // State: Flower petals are open/unfurled
-        btnLabelText.textContent = "Cloase";
-        pistilPrompt.textContent = "Click to close";
+        btnLabelText.textContent = "Close";
+        pistilPrompt.textContent = "Click to Close";
     } else {
         // State: Flower petals are folded inside bud
         btnLabelText.textContent = "Bloom";
