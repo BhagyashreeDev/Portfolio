@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bhagyashree Badadal — Full Stack Developer</title>
 
+    <!-- Favicon: Authentic 5-Petal Botanical Cherry Blossom (Sakura) Flower -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3CradialGradient id='c' cx='50%25' cy='50%25' r='50%25'%3E%3Cstop offset='0%25' stop-color='%239f1239'/%3E%3Cstop offset='100%25' stop-color='%23e11d48'/%3E%3C/radialGradient%3E%3ClinearGradient id='p' x1='0%25' y1='100%25' x2='0%25' y2='0%25'%3E%3Cstop offset='0%25' stop-color='%23e11d48'/%3E%3Cstop offset='35%25' stop-color='%23fb7185'/%3E%3Cstop offset='80%25' stop-color='%23fbcfe8'/%3E%3Cstop offset='100%25' stop-color='%23ffffff'/%3E%3C/linearGradient%3E%3Cpath id='petal' d='M50 50 C43 41 33 25 41 12 C44 7 48 8 50 12 C52 8 56 7 59 12 C67 25 57 41 50 50 Z' fill='url(%23p)' stroke='%23e11d48' stroke-width='0.8'/%3E%3C/defs%3E%3Cuse href='%23petal' transform='rotate(0 50 50)'/%3E%3Cuse href='%23petal' transform='rotate(72 50 50)'/%3E%3Cuse href='%23petal' transform='rotate(144 50 50)'/%3E%3Cuse href='%23petal' transform='rotate(216 50 50)'/%3E%3Cuse href='%23petal' transform='rotate(288 50 50)'/%3E%3Ccircle cx='50' cy='50' r='7' fill='url(%23c)'/%3E%3Ccircle cx='50' cy='43' r='1.8' fill='%23fbbf24'/%3E%3Ccircle cx='56.6' cy='47.8' r='1.8' fill='%23fbbf24'/%3E%3Ccircle cx='54.1' cy='55.6' r='1.8' fill='%23fbbf24'/%3E%3Ccircle cx='45.9' cy='55.6' r='1.8' fill='%23fbbf24'/%3E%3Ccircle cx='43.4' cy='47.8' r='1.8' fill='%23fbbf24'/%3E%3C/svg%3E" />
+
+    <!-- Open Graph / Facebook / LinkedIn / WhatsApp Social Sharing Meta Tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bhagyashreedev.github.io/my-portfolio/" />
+    <meta property="og:title" content="Bhagyashree Badadal — Full Stack Developer" />
+    <meta property="og:description" content="Full Stack Java & Node.js Developer portfolio featuring interactive 3D WebGL Sakura blossom physics and technical capability architecture." />
+    <meta property="og:image" content="https://bhagyashreedev.github.io/my-portfolio/preview.jpg" />
+
+
     <!-- Google Fonts: Plus Jakarta Sans (clean text) & Playfair Display (editorial headings) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,113 +23,18 @@
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap"
       rel="stylesheet"
     />
-
-    <style>
-      :root {
-        --bg-cream: #faf7f5;
-        --primary-rose: #be123c;
-        --accent-rose: #9f1239;
-        --soft-pink: #fdf2f8;
-        --border-pink: #fecdd3;
-        --card-bg: rgba(255, 255, 255, 0.85);
-        --card-border: rgba(254, 205, 211, 0.75);
-        --text-dark: #0f172a;
-        --text-muted: #334155;
-        --text-subtle: #64748b;
-      }
-
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      body {
-        background-color: var(--bg-cream);
-        font-family: "Plus Jakarta Sans", sans-serif;
-        color: var(--text-dark);
-        line-height: 1.65;
-        overflow-x: hidden;
-      }
-
-      /* Header Navigation */
-      header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 100;
-        background: rgba(250, 247, 245, 0.92);
-        backdrop-filter: blur(14px);
-        -webkit-backdrop-filter: blur(14px);
-        border-bottom: 1px solid var(--border-pink);
-        padding: 18px 40px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-
-      .brand {
-        font-family: "Playfair Display", serif;
-        font-size: 1.25rem;
-        font-weight: 600;
-        color: var(--primary-rose);
-        text-decoration: none;
-        letter-spacing: -0.01em;
-      }
-
-      nav {
-        display: flex;
-        gap: 32px;
-        align-items: center;
-      }
-
-      nav a {
-        color: var(--text-muted);
-        text-decoration: none;
-        font-weight: 500;
-        font-size: 0.9rem;
-        transition: color 0.2s ease;
-      }
-
-      nav a:hover {
-        color: var(--primary-rose);
-      }
-
-      .nav-btn {
-        background: var(--primary-rose);
-        color: #ffffff !important;
-        padding: 8px 20px;
-        border-radius: 20px;
-        font-weight: 600;
-        font-size: 0.88rem;
-        transition:
-          background-color 0.2s ease,
-          transform 0.2s ease;
-      }
-
-      .nav-btn:hover {
-        background: var(--accent-rose);
-        transform: translateY(-1px);
-      }
-
-      /* Main Container */
-      .container {
-        max-width: 1100px;
-        margin: 0 auto;
-        padding: 0 24px;
-        position: relative;
-        z-index: 10;
-      }
-
-      /* Hero Section */
-      .hero {
-        min-height: 88vh;
-        display: flex;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+     
+    <!-- Fixed Fullscreen 3D WebGL Sakura Canvas -->
+    <canvas id="webgl-sakura-canvas"></canvas>
+
+    <!-- Floating Interactive Hint: Prompts visitors to double tap/click to spawn flowers -->
+    <div class="canvas-interactive-hint" id="canvas-hint">
+      <span class="hint-petal">🌸</span> Double tap to make flowers
+    </div>
+
     <header>
       <a href="#" class="brand">Bhagyashree Badadal</a>
       <nav>
@@ -129,6 +45,10 @@
         <a href="mailto:bhagyashree.b.eng@gmail.com" class="nav-btn"
           >Contact Me</a
         >
+        <!-- Twilight / Midnight Mode Toggle Button -->
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Twilight Mode" title="Toggle Twilight Mode">
+          <span class="theme-icon">🌙</span>
+        </button>
       </nav>
     </header>
 
@@ -143,16 +63,14 @@
 
         <!-- Headline -->
         <h1>
-          Full Stack Java Developer building secure REST APIs &
-          <span class="highlight">Exploring Node.js & JS</span>
+          Full Stack Java Developer
+          <span class="highlight">Exploring Node.js & JavaScript</span>
         </h1>
 
         <!-- Summary from Resume -->
         <p class="hero-summary">
           Software Engineer based in Bengaluru with production experience in
-          Java, Spring Boot, Node.js, Express, React, and MySQL. Experienced in
-          architecting secure authentication, payment gateway integrations, and
-          multimodal document processing workflows with the Google Gemini API.
+          Java, Spring Boot, Node.js, Express, React, and MySQL.
         </p>
 
         <!-- Action Buttons -->
@@ -170,10 +88,281 @@
           <a href="mailto:bhagyashree.b.eng@gmail.com"
             >bhagyashree.b.eng@gmail.com</a
           >
-          <span>•</span>
-          <span>+91 8310428473</span>
+        </div>
+      </section>
+
+      <!-- INTERACTIVE BLOOMING EXPERTISE FLOWER -->
+      <section id="skills">
+        <div class="section-head">
+          <!-- <div class="section-label">Interactive Capability Map</div> -->
+          <h2 class="section-title">Technical Expertise</h2>
+          <p class="section-subtitle">
+            Click the flower bud below to bloom.
+          </p>
+        </div>
+
+        <div class="bloom-arena">
+          <!-- Interactive Trigger Button -->
+          <div class="bloom-toggle-bar">
+            <button class="bloom-btn" id="toggle-bloom-btn">
+              <span class="bloom-btn-icon"></span>
+              <span id="btn-label-text">Bloom</span>
+            </button>
+          </div>
+
+          <!-- The Flower Stage (starts tucked inside bud with outward glow; blooms on click) -->
+          <div class="flower-stage has-initial-glow" id="flower-stage">
+            <!-- Central Flower Core / Pistil -->
+            <div
+              class="center-pistil"
+              id="center-pistil"
+              title="Click to bloom or close"
+            >
+              <h3>Full Stack</h3>
+              <span class="subtitle">Java • Node.js • React • MySQL</span>
+              <span class="click-prompt" id="pistil-prompt">Click to Bloom</span>
+            </div>
+
+            <!-- Petal 1: Top (12 o'clock) -->
+            <div class="blooming-petal petal-top">
+              <!-- <span class="petal-tag">Petal 01</span> -->
+              <h4>Backend Architecture</h4>
+              <div class="petal-pills">
+                <span class="skill-chip">Java</span>
+                <span class="skill-chip">Spring Boot</span>
+                <span class="skill-chip">Node.js</span>
+                <span class="skill-chip">Express.js</span>
+                <span class="skill-chip">REST APIs</span>
+                <span class="skill-chip">JWT Security</span>
+                <span class="skill-chip">Hibernate ORM</span>
+                <span class="skill-chip">Maven</span>
+              </div>
+            </div>
+
+            <!-- Petal 2: Top-Right (72 degrees) -->
+            <div class="blooming-petal petal-top-right">
+              <!-- <span class="petal-tag">Petal 02</span> -->
+              <h4>Frontend & Web</h4>
+              <div class="petal-pills">
+                <span class="skill-chip">React</span>
+                <span class="skill-chip">JavaScript</span>
+                <span class="skill-chip">HTML5 & CSS3</span>
+              </div>
+            </div>
+
+            <!-- Petal 3: Bottom-Right (144 degrees) -->
+            <div class="blooming-petal petal-bottom-right">
+              <!-- <span class="petal-tag">Petal 03</span> -->
+              <h4>Data & Persistence</h4>
+              <div class="petal-pills">
+                <span class="skill-chip">MySQL</span>
+                <span class="skill-chip">MongoDB(Basics)</span>
+              </div>
+            </div>
+
+            <!-- Petal 4: Bottom-Left (216 degrees) -->
+            <div class="blooming-petal petal-bottom-left">
+              <!-- <span class="petal-tag">Petal 04</span> -->
+              <h4>AI & Automation</h4>
+              <div class="petal-pills">
+                <span class="skill-chip">Basic Agentic AI</span>
+                <span class="skill-chip">Puppeteer Automation</span>
+                <span class="skill-chip">Langraph (Basics)</span>
+              </div>
+            </div>
+
+            <!-- Petal 5: Top-Left (288 degrees) -->
+            <div class="blooming-petal petal-top-left">
+              <!-- <span class="petal-tag">Petal 05</span> -->
+              <h4>Core Engineering</h4>
+              <div class="petal-pills">
+                <span class="skill-chip">Data Structures</span>
+                <span class="skill-chip">Algorithms</span>
+                <span class="skill-chip">OOP</span>
+                <span class="skill-chip">Multithreading</span>
+                <span class="skill-chip">Git / GitHub</span>
+                <span class="skill-chip">Postman</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Academic Foundations Strip -->
+          <div class="foundations-strip">
+            <div class="stat-block">
+              <span class="stat-label">B.E. Information Science and Engineering</span>
+            </div>
+            <div class="stat-block">
+              <span class="stat-val">Java Gold</span>
+              <span class="stat-label">HackerRank Certified</span>
+            </div>
+            <div class="stat-block">
+              <span class="stat-val">SQL Gold</span>
+              <span class="stat-label">HackerRank Certified</span>
+            </div>
+            <div class="stat-block">
+              <span class="stat-val">Bengaluru</span>
+              <span class="stat-label">Karnataka, India</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROFESSIONAL EXPERIENCE -->
+      <section id="experience">
+        <div class="section-head">
+          <div class="section-label">Work History</div>
+          <h2 class="section-title">Professional Experience</h2>
+        </div>
+
+        <div class="timeline">
+          <!-- Experience 1: Invicto Labs -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-top">
+                <span class="timeline-role"
+                  >IT Intern — Web Data Extraction & Automation</span
+                >
+                <span class="timeline-period">June 2026 – Present</span>
+              </div>
+              <div class="timeline-company">Invicto Labs Inc.</div>
+              <p class="timeline-text">
+                Engineered web-data extraction workflows using Node.js,
+                Express.js, and Puppeteer to collect structured records from
+                county and public-record websites. Developed a
+                multi-stage copilot integrating Google Gemini multimodal models
+                for page-level document verification and decision support.
+              </p>
+            </div>
+          </div>
+
+          <!-- Experience 2: LTTS -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-top">
+                <span class="timeline-role">Software Developer Intern</span>
+                <span class="timeline-period">March 2026 – June 2026</span>
+              </div>
+              <div class="timeline-company">L&T Technology Services (LTTS)</div>
+              <p class="timeline-text">
+                Migrated legacy cross-platform applications from Xamarin.Forms
+                to .NET MAUI, working directly with MVVM architectural design
+                patterns to ensure maintainable, component-driven mobile code.
+              </p>
+            </div>
+          </div>
+
+          <!-- Experience 3: Kodnest -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-top">
+                <span class="timeline-role"
+                  >Full Stack Java Developer Trainee</span
+                >
+                <span class="timeline-period">July 2025 – April 2026</span>
+              </div>
+              <div class="timeline-company">Kodnest</div>
+              <p class="timeline-text">
+                Completed comprehensive training covering Core Java, Spring
+                Boot, React, MySQL, REST API design, JWT security
+                implementations, and Data Structures & Algorithms. Built
+                SalesSavvy, an end-to-end full-stack e-commerce application.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+            <!-- FEATURED PROJECTS -->
+      <section id="projects">
+        <div class="section-head">
+          <div class="section-label">Selected Work</div>
+          <h2 class="section-title">Featured Projects</h2>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: SearchFix AI -->
+          <div class="project-card">
+            <span class="project-role-type">AI Automation & Chrome Extension</span>
+            <h3>SearchFix AI — Title Examination Copilot</h3>
+            <p>
+              An end-to-end workflow designed to interpret customer revision requests, classify title-search defects, and gather verification evidence from legal documents.
+            </p>
+            <ul class="project-bullets">
+              <li>Integrated Google Gemini multimodal models to parse multi-page deeds, tax certificates, and search reports with page-level evidence.</li>
+              <li>Constructed a Manifest V3 Chrome Extension that extracts queue records, analyzes timestamps, and communicates with backend Node.js REST APIs.</li>
+            </ul>
+            <div class="tech-stack-row">
+              <span class="tech-pill">Node.js</span>
+              <span class="tech-pill">Express.js</span>
+              <span class="tech-pill">Google Gemini API</span>
+              <span class="tech-pill">Manifest V3</span>
+              <span class="tech-pill">REST APIs</span>
+            </div>
+            <a href="https://github.com/BhagyashreeDev/AI-SearchFix" target="_blank" class="project-link">View →</a>
+          </div>
+
+          <!-- Project 2: SalesSavvy -->
+          <div class="project-card">
+            <span class="project-role-type">Full Stack Web Application</span>
+            <h3>SalesSavvy — E-Commerce Application</h3>
+            <p>
+              Production-oriented e-commerce platform with authenticated customer ordering, cart management, and payment verification.
+            </p>
+            <ul class="project-bullets">
+              <li>Implemented Spring Security with JWT token authentication, HttpOnly cookies, and custom role-based access control filters.</li>
+              <li>Authored 25+ REST APIs for inventory and checkout, with Razorpay HMAC-SHA256 signature verification.</li>
+              <li>Created an administrative dashboard for daily, monthly, and category-wise sales metrics using MySQL aggregations.</li>
+            </ul>
+            <div class="tech-stack-row">
+              <span class="tech-pill">Spring Boot</span>
+              <span class="tech-pill">React</span>
+              <span class="tech-pill">MySQL</span>
+              <span class="tech-pill">JWT</span>
+              <span class="tech-pill">Razorpay</span>
+            </div>
+            <a href="https://github.com/BhagyashreeDev/SalesSavvyFullStack" target="_blank" class="project-link">View →</a>
+          </div>
+
+          <!-- Project 3: Shop Management System -->
+          <div class="project-card">
+            <span class="project-role-type">Desktop Enterprise Software</span>
+            <h3>Shop Management System</h3>
+            <p>
+              Desktop inventory and point-of-sale management system built with Java and object-relational mapping.
+            </p>
+            <ul class="project-bullets">
+              <li>Engineered role-based authentication and inventory management using Java Swing UI and Hibernate ORM.</li>
+              <li>Implemented dynamic HQL product queries and MySQL database persistence using mapped entity relationships.</li>
+            </ul>
+            <div class="tech-stack-row">
+              <span class="tech-pill">Java</span>
+              <span class="tech-pill">Hibernate</span>
+              <span class="tech-pill">MySQL</span>
+              <span class="tech-pill">Maven</span>
+              <span class="tech-pill">Swing</span>
+            </div>
+            <a href="https://github.com/BhagyashreeDev/shop_management_system" target="_blank" class="project-link">View →</a>
+          </div>
         </div>
       </section>
     </main>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>© 2026 Bhagyashree Badadal • Bengaluru, India</p>
+    </footer>
+
+    <!-- ============================================================== -->
+    <!-- SCRIPTS                                                        -->
+    <!-- 1. Three.js: Core WebGL 3D graphics library                    -->
+    <!-- 2. bloom.js: Interactive skill flower unfurling controller      -->
+    <!-- 3. sakura3d.js: Ambient 3D falling cherry blossom engine       -->
+    <!-- ============================================================== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="bloom.js"></script>
+    <script src="sakura3d.js"></script>
   </body>
 </html>
